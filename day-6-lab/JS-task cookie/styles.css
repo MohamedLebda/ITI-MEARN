@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 2rem;
+}
+.container {
+  display: flex;
+}
+.st-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.st-table th,
+.st-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.st-table th {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
+.st-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.st-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.err-msg {
+  color: red;
+  height: 1rem;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  outline: none;
+  border: 3px solid black;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+select[name="country"],
+button {
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+}
+
+button {
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.submit-btn {
+  background-color: green;
+}
+.logout {
+  background-color: red;
+}
+
+.labels {
+  padding-right: 1rem;
+}
+
+.wrong {
+  border: 3px solid red !important;
+}
+.color {
+  margin-right: 0.5rem;
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
