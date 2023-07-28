@@ -1,19 +1,25 @@
-function addNumbers(num) {
-  if (!num) {
+function addNumbers() {
+  var args = Array.from(arguments);
+
+  if (args.length === 0) {
     throw new Error("Please provide at least one argument.");
   }
 
-  if (typeof num !== "number") {
-    throw new Error("All arguments must be numbers.");
+  let sum = 0;
+  for (const arg of args) {
+    if (typeof arg !== "number") {
+      throw new Error("All arguments must be numbers.");
+    }
+    sum += arg;
   }
 
-  return num + 10;
+  return sum;
 }
 
-console.log(addNumbers(2));
+console.log(addNumbers(1, 4, 5));
 
 try {
-  console.log(addNumbers("two"));
+  console.log(addNumbers("two", 2));
 } catch (error) {
   console.error(error.message);
 }
