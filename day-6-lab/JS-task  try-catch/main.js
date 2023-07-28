@@ -6,7 +6,7 @@ function addNumbers() {
   }
 
   var sum = 0;
-  for (const arg of args) {
+  for (var arg of args) {
     if (typeof arg !== "number") {
       throw new Error("All arguments must be numbers.");
     }
