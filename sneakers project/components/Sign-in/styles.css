@@ -1,0 +1,114 @@
+main {
+  background-color: #eee;
+  padding: 2em;
+}
+.err-msg {
+  color: red;
+  height: 1rem;
+}
+form {
+  max-width: 800px;
+}
+main input:not(input[type="radio"]) {
+  width: 100%;
+  padding: 0.5em;
+  /* margin-bottom: 1em; */
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+input:focus {
+  border: 2px solid lightblue;
+}
+
+.gender-input {
+  margin-bottom: 20px;
+}
+
+.labels {
+  font-weight: bold;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.radio-container label {
+  font-weight: normal;
+}
+
+.err-msg {
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  height: 1rem;
+}
+
+.radio-container input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-container label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  background-color: white;
+  margin-right: 5px;
+  vertical-align: text-top;
+}
+
+.radio-container input[type="radio"]:checked + label:before {
+  background-color: black;
+  border-color: black;
+}
+
+.radio-container label:hover:before {
+  border-color: #3498db;
+}
+
+main button {
+  background-color: #111;
+  color: white;
+  padding: 0.5em 1em;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+main button:hover {
+  color: #111;
+  background-color: white;
+  border: 2px solid #111;
+}
+
+.logout {
+  background-color: red;
+}
+
+main label {
+  display: block;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.wrong {
+  border: 2px solid red !important;
+}
+.color {
+  margin-right: 0.5rem;
+}

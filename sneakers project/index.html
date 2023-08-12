@@ -1,0 +1,306 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>sneakers Store</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navBar-wrapper" id="nav">
+        <div class="logo-links-wrapper navTop">
+          <div class="logo">
+            <a href="#">
+              <img src="./img/sneakers.png" alt="logo" />
+            </a>
+          </div>
+
+          <div class="nav-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="./components/about.html">About</a></li>
+              <li><a href="./components/Contact-us.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn menu-btn-left">
+              <div class="menu-btn__burger"></div>
+            </div>
+          </div>
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </div>
+
+        <div class="cart-user-wrapper">
+          <div class="cart">
+            <div class="open-cart">
+              <span class="notification">0</span>
+              <img src="./img/icon-cart-white.svg" alt="cart icon" />
+            </div>
+
+            <div class="cart-items">
+              <h3 class="cart-items-header">Cart</h3>
+              <div class="cart-items-content">
+                <p class="cart-empty">Your cart is empty.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="user">
+            <img src="./img/A-Letter.jpg" alt="user photo" />
+          </div>
+          <div class="signin-box">
+            <button class="signin-button">
+              <a href="./components/Sign-in/sign-in.html" class="sign-btn"
+                >Sign In</a
+              >
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="slide-show">
+      <h3 class="slide-header">Our Top Products</h3>
+      <ul class="navBottom">
+        <li class="menuItem">AIR FORCE</li>
+        <li class="menuItem">JORDAN</li>
+        <li class="menuItem">BLAZER</li>
+        <li class="menuItem">CRATER</li>
+        <li class="menuItem">HIPPIE</li>
+      </ul>
+      <div class="slider">
+        <div class="sliderWrapper">
+          <div class="sliderItem">
+            <img src="./img/air.png" alt="" class="sliderImg" />
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle">
+              AIR FORCE<br />
+              NEW<br />
+              SEASON
+            </h1>
+            <h2 class="sliderPrice">$119</h2>
+            <a href="#product">
+              <button class="buyButton">BUY NOW!</button>
+            </a>
+          </div>
+          <div class="sliderItem">
+            <img src="./img/jordan.png" alt="" class="sliderImg" />
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle">
+              AIR JORDAN<br />
+              NEW<br />
+              SEASON
+            </h1>
+            <h2 class="sliderPrice">$149</h2>
+            <a href="#product">
+              <button class="buyButton">BUY NOW!</button>
+            </a>
+          </div>
+          <div class="sliderItem">
+            <img src="./img/blazer.png" alt="" class="sliderImg" />
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle">
+              BLAZER<br />
+              NEW<br />
+              SEASON
+            </h1>
+            <h2 class="sliderPrice">$109</h2>
+            <a href="#product">
+              <button class="buyButton">BUY NOW!</button>
+            </a>
+          </div>
+          <div class="sliderItem">
+            <img src="./img/crater.png" alt="" class="sliderImg" />
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle">
+              CRATER<br />
+              NEW<br />
+              SEASON
+            </h1>
+            <h2 class="sliderPrice">$129</h2>
+            <a href="#product">
+              <button class="buyButton">BUY NOW!</button>
+            </a>
+          </div>
+          <div class="sliderItem">
+            <img src="./img/hippie.png" alt="" class="sliderImg" />
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle">
+              HIPPIE<br />
+              NEW<br />
+              SEASON
+            </h1>
+            <h2 class="sliderPrice">$99</h2>
+            <a href="#product">
+              <button class="buyButton">BUY NOW!</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="features">
+      <div class="feature">
+        <img src="./img/shipping.png" alt="" class="featureIcon" />
+        <span class="featureTitle">FREE SHIPPING</span>
+        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/return.png" alt="" />
+        <span class="featureTitle">30 DAYS RETURN</span>
+        <span class="featureDesc"
+          >No question return and easy refund in 14 days.</span
+        >
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/gift.png" alt="" />
+        <span class="featureTitle">GIFT CARDS</span>
+        <span class="featureDesc"
+          >Buy gift cards and use coupon codes easily.</span
+        >
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/contact.png" alt="" />
+        <span class="featureTitle">CONTACT US!</span>
+        <span class="featureDesc"
+          >Keep in touch via email and support system.</span
+        >
+      </div>
+    </div>
+
+    <div class="product" id="product">
+      <img src="./img/air.png" alt="" class="product-img" />
+      <div class="product-details">
+        <h1 class="product-title">AIR FORCE</h1>
+        <h2 class="product-price">$119</h2>
+        <p class="product-desc">
+          Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias
+          assumenda dolorum doloremque sapiente aliquid aperiam.
+        </p>
+        <div class="colors">
+          <div class="color"></div>
+          <div class="color"></div>
+        </div>
+        <div class="sizes">
+          <div class="size">42</div>
+          <div class="size">43</div>
+          <div class="size">44</div>
+        </div>
+        <div class="prod-purchase">
+          <div class="quantity-wrapper">
+            <span id="decrease" class="quantity-btn">-</span>
+            <span class="quantity">0</span>
+            <span id="increase" class="quantity-btn">+</span>
+          </div>
+        </div>
+        <button class="product-button">BUY NOW!</button>
+      </div>
+    </div>
+
+    <section class="newSeason">
+      <div class="nsItem">
+        <img
+          src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          alt=""
+          class="nsImg"
+        />
+      </div>
+      <div class="nsItem">
+        <h3 class="nsTitleSm">SUMMER NEW ARRIVALS</h3>
+        <h1 class="nsTitle">New Season</h1>
+        <h1 class="nsTitle">New Collection</h1>
+        <a href="#products">
+          <button class="nsButton">CHOOSE YOUR STYLE</button>
+        </a>
+      </div>
+      <div class="nsItem">
+        <img
+          src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          alt=""
+          class="nsImg"
+        />
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="filter-buttons">
+        <button class="filter-button active" data-category="all">All</button>
+        <button class="filter-button" data-category="men">Men</button>
+        <button class="filter-button" data-category="women">Women</button>
+        <input
+          type="text"
+          placeholder="Search by product name"
+          class="filter-search"
+        />
+      </div>
+
+      <div class="card-container"></div>
+    </section>
+
+    <footer>
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">About Us</h1>
+          <ul class="fList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Useful Links</h1>
+          <ul class="fList">
+            <li class="fListItem">Support</li>
+            <li class="fListItem">Refund</li>
+            <li class="fListItem">FAQ</li>
+            <li class="fListItem">Feedback</li>
+            <li class="fListItem">Stories</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle"><a href="#products"></a>All Products</h1>
+          <ul class="fList">
+            <li class="fListItem">Air Force</li>
+            <li class="fListItem">Air Jordan</li>
+            <li class="fListItem">Blazer</li>
+            <li class="fListItem">Crater</li>
+            <li class="fListItem">Hippie</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerRight">
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@email.com" class="fInput" />
+            <button class="fButton">Join!</button>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Follow Us</h1>
+          <div class="fIcons">
+            <img src="./img/facebook.png" alt="" class="fIcon" />
+            <img src="./img/twitter.png" alt="" class="fIcon" />
+            <img src="./img/instagram.png" alt="" class="fIcon" />
+            <img src="./img/whatsapp.png" alt="" class="fIcon" />
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <span class="copyright"
+            >&copy; Mohamed Lebda - Sneakers Store. All rights reserved.
+            2023.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./components/Sign-in/cookie.js"></script>
+  </body>
+</html>

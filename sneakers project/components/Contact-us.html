@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navBar-wrapper" id="nav">
+        <div class="logo-links-wrapper navTop">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../img/sneakers.png" alt="logo" />
+            </a>
+          </div>
+
+          <div class="nav-links">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-btn menu-btn-left">
+              <div class="menu-btn__burger"></div>
+            </div>
+          </div>
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </div>
+
+        <div class="cart-user-wrapper">
+          <div class="cart">
+            <div class="open-cart">
+              <span class="notification">0</span>
+              <img src="../img/icon-cart-white.svg" alt="cart icon" />
+            </div>
+
+            <div class="cart-items">
+              <h3 class="cart-items-header">Cart</h3>
+              <div class="cart-items-content">
+                <p class="cart-empty">Your cart is empty.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="user">
+            <img src="../img/image-avatar.png" alt="user photo" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="contact-main">
+      <section class="contact-form">
+        <h2 class="contact-h2">Get in Touch</h2>
+        <form action="#" method="post">
+          <label class="contact-label" for="name">Name</label>
+          <input
+            class="contact-input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+          <p class="error-message"></p>
+
+          <label class="contact-label" for="email">Email</label>
+          <input
+            class="contact-input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <p class="error-message"></p>
+
+          <label class="contact-label" for="message">Message</label>
+          <textarea
+            class="contact-textarea"
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+          <p class="error-message"></p>
+
+          <button class="contact-btn" type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">About Us</h1>
+          <ul class="fList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Useful Links</h1>
+          <ul class="fList">
+            <li class="fListItem">Support</li>
+            <li class="fListItem">Refund</li>
+            <li class="fListItem">FAQ</li>
+            <li class="fListItem">Feedback</li>
+            <li class="fListItem">Stories</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle"><a href="#products"></a>All Products</h1>
+          <ul class="fList">
+            <li class="fListItem">Air Force</li>
+            <li class="fListItem">Air Jordan</li>
+            <li class="fListItem">Blazer</li>
+            <li class="fListItem">Crater</li>
+            <li class="fListItem">Hippie</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerRight">
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@email.com" class="fInput" />
+            <button class="fButton">Join!</button>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Follow Us</h1>
+          <div class="fIcons">
+            <img src="../img/facebook.png" alt="" class="fIcon" />
+            <img src="../img/twitter.png" alt="" class="fIcon" />
+            <img src="../img/instagram.png" alt="" class="fIcon" />
+            <img src="../img/whatsapp.png" alt="" class="fIcon" />
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <span class="copyright"
+            >&copy; Mohamed Lebda - Sneakers Store. All rights reserved.
+            2023.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./contact.js"></script>
+  </body>
+</html>
